@@ -1,10 +1,37 @@
 # Wave to Control: Real-Time Hand Gesture Recognition System
 
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-DeepLearning-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-ComputerVision-green)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-HandTracking-purple)
+![IEEE](https://img.shields.io/badge/Research-IEEE%20Conference-red)
+
+A real-time hand gesture recognition system that enables touchless control of desktop applications using Computer Vision and Deep Learning.
+
+---
+
 ## Overview
 
-Wave to Control is a real-time hand gesture recognition system that enables touchless interaction with desktop applications using computer vision and deep learning. Using a standard webcam, the system detects and classifies hand gestures, allowing users to control applications such as Microsoft PowerPoint, Google Chrome, and VLC Media Player without relying on traditional input devices.
+Wave to Control is a real-time hand gesture recognition system that allows users to interact with desktop applications through intuitive hand gestures captured by a standard webcam. The system leverages MediaPipe for hand landmark detection, TensorFlow for gesture classification, and OpenCV for real-time video processing.
 
-This project was developed as part of an academic research initiative and was accepted for presentation at the **IEEE-sponsored IGNITE 2026 International Conference on Innovation & Growth in Next-Gen Intelligent Technology & Engineering**.
+The project was developed as part of an academic research initiative and formed the basis of a research paper accepted for presentation at the **IEEE-sponsored IGNITE 2026 International Conference on Innovation & Growth in Next-Gen Intelligent Technology & Engineering**.
+
+---
+
+## Demo
+
+Add screenshots or GIFs here:
+
+```text
+screenshots/demo.gif
+screenshots/interface.png
+```
+
+Or include a demo video link:
+
+```text
+https://your-demo-video-link
+```
 
 ---
 
@@ -13,7 +40,7 @@ This project was developed as part of an academic research initiative and was ac
 * Real-time hand gesture detection and recognition
 * Touchless control of desktop applications
 * Gesture classification accuracy of **97.5%**
-* Real-time performance at **25–30 FPS**
+* Real-time performance of **25–30 FPS**
 * MediaPipe-based hand landmark extraction
 * TensorFlow-powered gesture classification
 * OpenCV integration for video processing and visualization
@@ -56,6 +83,79 @@ This project was developed as part of an academic research initiative and was ac
 
 ---
 
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Wave-to-Control.git
+cd Wave-to-Control
+```
+
+### Create a Virtual Environment (Recommended)
+
+```bash
+python -m venv venv
+```
+
+Activate the environment:
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Or install manually:
+
+```bash
+pip install tensorflow opencv-python mediapipe numpy
+```
+
+---
+
+## Running the Application
+
+Launch the application:
+
+```bash
+python main.py
+```
+
+Before running, ensure:
+
+* A webcam is connected and accessible.
+* Adequate lighting is available.
+* Your hand remains visible within the camera frame.
+
+---
+
+## Gesture Controls
+
+| Gesture     | Action                           |
+| ----------- | -------------------------------- |
+| Open Palm   | Activate Tracking                |
+| Swipe Left  | Previous Slide / Previous Action |
+| Swipe Right | Next Slide / Next Action         |
+| Thumbs Up   | Confirm / Select                 |
+| Fist        | Pause / Stop Tracking            |
+
+> Update this table according to the exact gestures implemented in your project.
+
+---
+
 ## Performance
 
 | Metric                       | Result                  |
@@ -86,6 +186,55 @@ This project served as the foundation for a research paper accepted for presenta
 
 **Technical Sponsor:** IEEE
 
+The paper presents the design, implementation, and evaluation of a real-time hand gesture recognition system for touchless desktop application control.
+
+---
+
+## Project Structure
+
+```text
+Wave-to-Control/
+│
+├── dataset/
+│   └── gesture_images/
+│
+├── models/
+│   └── trained_model.h5
+│
+├── src/
+│   ├── hand_tracking.py
+│   ├── gesture_classifier.py
+│   ├── application_control.py
+│   └── main.py
+│
+├── screenshots/
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+---
+
+## Troubleshooting
+
+### Webcam Not Detected
+
+* Ensure no other application is currently using the webcam.
+* Verify camera permissions are enabled.
+
+### Poor Gesture Recognition
+
+* Improve lighting conditions.
+* Keep the hand fully visible.
+* Maintain a consistent distance from the camera.
+
+### Low FPS
+
+* Close unnecessary background applications.
+* Reduce camera resolution if supported.
+* Use GPU acceleration when available.
+
 ---
 
 ## Future Enhancements
@@ -93,16 +242,21 @@ This project served as the foundation for a research paper accepted for presenta
 * Dynamic gesture sequence recognition
 * Multi-hand gesture support
 * Custom gesture training interface
-* Cross-platform desktop integration
 * Voice and gesture hybrid interaction
+* Cross-platform desktop integration
 * Edge-device deployment optimization
 
 ---
 
 ## Authors
 
-**Yuvika Agrawal** and **Tanvi Sharma**
+**Yuvika Agrawal**
+Computer Science Student | AI & Machine Learning Enthusiast
+
+**Tanvi Sharma**
 
 ---
-This project is intended for educational, research, and demonstration purposes only.
 
+## License
+
+This project is intended for educational, research, and demonstration purposes only.
