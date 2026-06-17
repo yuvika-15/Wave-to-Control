@@ -1,4 +1,4 @@
-# Gesture-Controlled System Utility
+# Wave to Control
 
 A real-time hand gesture recognition system that allows users to control system volume, screen brightness, and capture screenshots using simple hand gestures through a webcam.
 
